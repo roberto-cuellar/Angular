@@ -8,6 +8,7 @@
         <a  href="#"
             *ngFor="let item of historial"
             class="list-group-item list-group-item-action"
+            (click) = "buscar(item)"
             >{{item | titlecase}}</a>
             <!-- En este caso el pipe titlecase solo manipulará la data
             a la hora de mostrarla, más nó de almacenarla -->
